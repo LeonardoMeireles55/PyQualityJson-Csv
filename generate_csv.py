@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def import_csv():
-    endpoint_url = "http://localhost:8080/integra/getresults?sort=date,desc&size=46"
+    endpoint_url = "http://localhost:8080/integra/getresults?sort=date,desc&size=512"
     response = requests.get(endpoint_url)
 
     json_data = response.json()

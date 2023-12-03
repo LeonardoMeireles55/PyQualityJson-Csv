@@ -18,7 +18,7 @@ for line in lines:
     fields = [field.strip('"') for field in fields]
     
     date = str(fields[4] + "/" + fields[5])
-    formatted_date = f"{date[6:8]}-{date[4:6]}-{date[:4]} {date[9:]}"
+    formatted_date = f"{date[:4]}-{date[4:6]}-{date[6:8]} {date[9:]}"
 
     level = str(fields[15])
     level_lot = str(fields[16])
